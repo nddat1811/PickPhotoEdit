@@ -12,6 +12,7 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -93,7 +94,11 @@ public class MainActivity extends AppCompatActivity {
                     //Initialize intent
                     Intent intent = new Intent(MainActivity.this, EditPicture.class);
                     //Set data
-                    intent.setData(uri);
+                    Bundle bundle = new Bundle();
+                    Log.d("img_data", data.getData().toString());
+                    bundle.putString("img_data", uri.toString());
+                    intent.putExtras(bundle);
+                    startActivity(intent);
                     //Set output directory name
 
             }
