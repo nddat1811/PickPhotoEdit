@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
 
                         //open file in showphotoActivity
                         Intent i = new Intent(MainActivity.this, ShowPhotoActivity.class);
-                        i.putExtra("paht", path+"");
+                        i.putExtra("path", path+"");
                         startActivity(i);
 
                     }

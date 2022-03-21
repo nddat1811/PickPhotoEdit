@@ -6,13 +6,13 @@ import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
 import android.os.Bundle;
 import android.view.View;
-import android.view.animation.RotateAnimation;
 import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.File;
+
 
 public class ShowPhotoActivity extends AppCompatActivity {
 
@@ -36,7 +36,7 @@ public class ShowPhotoActivity extends AppCompatActivity {
         if(imgfile.exists()){
             Bitmap myBitmap = BitmapFactory.decodeFile(imgfile.getAbsolutePath());
             //new android or after android 10+
-            imageview.setImageBitmap(RotateBitmap(myBitmap, 90));
+            imageview.setImageBitmap(RotateBitmap(myBitmap, 0));
             //imageview.setImageBitmap(new RotateAnimation(myBitmap, 90));
         }
 
