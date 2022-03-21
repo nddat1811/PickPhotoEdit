@@ -3,8 +3,10 @@ package com.ts.myapplication;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Matrix;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.RotateAnimation;
 import android.widget.Button;
 import android.widget.ImageView;
 
@@ -35,6 +37,7 @@ public class ShowPhotoActivity extends AppCompatActivity {
             Bitmap myBitmap = BitmapFactory.decodeFile(imgfile.getAbsolutePath());
             //new android or after android 10+
             imageview.setImageBitmap(RotateBitmap(myBitmap, 90));
+            //imageview.setImageBitmap(new RotateAnimation(myBitmap, 90));
         }
 
         btn_edit.setOnClickListener(new View.OnClickListener() {
@@ -49,7 +52,11 @@ public class ShowPhotoActivity extends AppCompatActivity {
         });
     }
 
-    private Bitmap RotateBitmap(Bitmap myBitmap, int i) {
-
+    private Bitmap RotateBitmap(Bitmap src, float angle) {
+        Matrix matrix = new Matrix();
+        matrix.postRotate(angle);
+        return Bitmap.createBitmap(src, 0,0 , src.getWidth(), src.getHeight(), matrix, true);
     }
+
+
 }

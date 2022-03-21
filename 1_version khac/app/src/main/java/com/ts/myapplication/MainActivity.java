@@ -6,6 +6,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView img_cam, img_gallery;
 
     private int REQUEST_CODE_PERMISSIONS = 101;
-    private int PICK_IMAGE_REQUEST = 102;
+    private static final int PICK_IMAGE_REQUEST = 102;
 
     private final String[] REQUIRED_PERMISSIONS = new String[] {
             "android.permission.CAMERA",
@@ -81,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
         + " = ?", new String[]{document_id}, null);
 
         cursor.moveToFirst();
-        String path = cursor.getString(cursor.getColumnIndex(MediaStore.Images.Media.DATA));
+        @SuppressLint("Range") String path = cursor.getString(cursor.getColumnIndex(MediaStore.Images.Media.DATA));
         cursor.close();
         return path;
     }
