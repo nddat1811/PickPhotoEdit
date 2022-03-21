@@ -4,7 +4,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
-import androidx.core.content.PackageManagerCompat;
+
 
 import android.content.Context;
 import android.content.Intent;
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
             "android.permission.CAMERA",
             "android.permission.WRITE_EXTERNAL_STORAGE",
             "android.permission.READ_EXTERNAL_STORAGE"
-    }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
 
         switch (requestCode)
         {
-            case  PICK_IMAGE_REQUEST:
+            case PICK_IMAGE_REQUEST:
                 if(resultCode == RESULT_OK) {
                     try{
                         Uri uri = data.getData();
@@ -111,6 +111,8 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
                 break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + requestCode);
         }
     }
 

@@ -50,5 +50,6 @@ public class ShowPhotoActivity extends AppCompatActivity {
     }
 
     private Bitmap RotateBitmap(Bitmap myBitmap, int i) {
+
     }
 }
