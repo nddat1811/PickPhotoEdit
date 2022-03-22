@@ -18,6 +18,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+
+//https://www.youtube.com/watch?v=j4q-ttXn2cU    link ytb của này
 public class MainActivity extends AppCompatActivity {
 
     ImageView img_cam, img_gallery;
