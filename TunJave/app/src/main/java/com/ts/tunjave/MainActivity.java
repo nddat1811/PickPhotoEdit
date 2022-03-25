@@ -108,6 +108,7 @@ public class MainActivity extends  Activity {
 
     private void openSystemCameraToTakeAnImage() {
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE_SECURE);
+//        Intent intent = new Intent(MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA); //chup dep
         startActivityForResult(intent, CAMERA_RESULT);
     }
 
