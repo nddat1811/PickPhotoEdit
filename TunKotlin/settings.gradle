@@ -13,5 +13,5 @@ dependencyResolutionManagement {
         maven { url 'https://artifactory.img.ly/artifactory/imgly' }
     }
 }
-rootProject.name = "TunJave"
+rootProject.name = "TunKotlin"
 include ':app'

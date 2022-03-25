@@ -1,15 +1,13 @@
 plugins {
     id 'com.android.application'
-    id 'ly.img.android.sdk'
     id 'org.jetbrains.kotlin.android'
+    id 'ly.img.android.sdk'
 }
-
 imglyConfig {
 
     pesdk {
         enabled true
-        licensePath 'null' // set `null` for free trial
-        //licensePath 'pesdk_android_license' // set `null` for free trial
+        licencePath 'pesdk_android_license' // Name of the Licence file in the asset folder
     }
 
     // Define the modules you are need
@@ -28,9 +26,11 @@ imglyConfig {
         include 'ui:adjustment'
         include 'ui:text-design'
 
-
         // Add the serializer if you need
         include 'backend:serializer'
+
+        // Allow Background Encoding [Optional]
+        include 'backend:headless'
 
         // Add asset packs if you need
         include 'assets:font-basic'
@@ -39,14 +39,15 @@ imglyConfig {
         include 'assets:overlay-basic'
         include 'assets:sticker-shapes'
         include 'assets:sticker-emoticons'
+        include 'backend:sticker-smart'
     }
 }
-
 android {
     compileSdk 32
     buildToolsVersion '30.0.3'
+
     defaultConfig {
-        applicationId "com.ts.tunjave"
+        applicationId "com.ts.tunkotlin"
         minSdk 26
         targetSdk 32
         versionCode 1
@@ -65,13 +66,14 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
 }
 
 dependencies {
-    //implementation fileTree(dir: 'libs', include: ['*.jar'])
-    //implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.10"
 
-
+    implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.5.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
