@@ -8,8 +8,8 @@ imglyConfig {
 
     pesdk {
         enabled true
-//        licensePath null // set `null` for free trial
-        licensePath 'pesdk_android_license' // set `null` for free trial
+        licensePath null // set `null` for free trial
+//        licensePath 'pesdk_android_license' // set `null` for free trial
     }
 
     // Define the modules you are need
