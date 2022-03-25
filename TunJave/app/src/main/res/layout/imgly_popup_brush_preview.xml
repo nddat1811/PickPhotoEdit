@@ -37,8 +37,7 @@
                 android:layout_weight="30"/>
             <RelativeLayout
                 android:id="@+id/blurView"
-                android:background="@drawable/brush_preview_background"
-                android:padding="4dp"
+                xmlns:android="http://schemas.android.com/apk/res/android"
                 style="@style/Imgly.PESDK.Editor.Popup.Brush">
                 <ly.img.android.pesdk.ui.widgets.BrushToolPreviewView
                     android:id="@+id/brushToolPreview"

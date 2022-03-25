@@ -81,7 +81,7 @@ public class MainActivity extends  Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        openGallery = findViewById(R.id.sdk_button);
+        openGallery = findViewById(R.id.openGallery);
         openGallery.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 openSystemGalleryToSelectAnImage();

@@ -3,7 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Administrator/Documents/GitHub/PickPhotoEdit/TunJave/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/Administrator/Documents/GitHub/PickPhotoEdit/TunJave/app/src/main/res/drawable/background_black.xml" value="0.1" />
+        <entry key="..\:/Users/Administrator/Documents/GitHub/PickPhotoEdit/TunJave/app/src/main/res/drawable/button_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/Administrator/Documents/GitHub/PickPhotoEdit/TunJave/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/Administrator/Documents/GitHub/PickPhotoEdit/TunJave/app/src/main/res/layout/activity_main.xml" value="0.23229166666666667" />
+        <entry key="..\:/Users/Administrator/Documents/GitHub/PickPhotoEdit/TunJave/app/src/main/res/layout/imgly_popup_brush_preview.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>
