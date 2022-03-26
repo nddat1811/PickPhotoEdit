@@ -8,30 +8,25 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.GridView;
-import android.widget.ListView;
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Locale;
 
 
-
-// Nguồn RSS:   https://vtc.vn/main-rss.html    ---- VTC News
-//              https://baotintuc.vn/rss.htm    ---- Báo tin tức
-//              https://vnexpress.net/rss       ---- VNexpress
-//              https://thanhnien.vn/rss.html   ---- Báo Thanh niên
-//              https://tuoitre.vn/rss.htm      ---- Tuổi trẻ
-//              https://www.24h.com.vn/guest/RSS/  - Báo 24h
+// Nguồn RSS:   https://vtc.vn/main-rss.html            ---- VTC News
+//              https://baotintuc.vn/rss.htm            ---- Báo tin tức
+//              https://vnexpress.net/rss               ---- VNexpress
+//              https://thanhnien.vn/rss.html           ---- Báo Thanh niên
+//              https://tuoitre.vn/rss.htm              ---- Tuổi trẻ
+//              https://www.24h.com.vn/guest/RSS/       ---- Báo 24h
+//              https://vietnamnet.vn/vn/rss/           ---- VietNamNet
+//              https://ictnews.vietnamnet.vn/rss/      ---- ITC New
 public class MainActivity extends Activity {
     MyImageAdapter adapterMainSubjects;
     GridView myMainGridView;
     Context context;
     SingleItem selectedNewsItem;
-    String[] apps = {"Thanh Niên", "VnExpress", "Tuổi trẻ", "VTC News" ,"Báo tin tức", "Báo 24h"};
+    String[] apps = {"Thanh Niên", "VnExpress", "Tuổi trẻ", "VTC News" ,"Báo tin tức", "Báo 24h", "VietNamNet", "ITCNew"};
     Integer[] thumbnails = {R.drawable.logo_tn, R.drawable.logo_vnex, R.drawable.logo_tt, R.drawable.logo_vtcnews, R.drawable.logo_tintuc,
-            R.drawable.logo_24h};
+            R.drawable.logo_24h, R.drawable.logo_vnnet, R.drawable.logo_itcnew};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

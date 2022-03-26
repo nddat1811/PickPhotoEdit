@@ -119,26 +119,26 @@ public class ShowChannels extends Activity {
             {"https://baotintuc.vn/ban-doc.rss", "Bạn đọc"}
     };
     String [][] bao24h = {
-            {"24h.com.vn/upload/rss/trangchu24h.rss", "Trang chủ"},
-            {"24h.com.vn/upload/rss/tintuctrongngay.rss", "Tin tức trong ngày"},
-            {"24h.com.vn/upload/rss/bongda.rss", "Bóng đá"},
-            {"24h.com.vn/upload/rss/asiancup2019.rss", "ASIAN CUP 2019"},
-            {"24h.com.vn/upload/rss/anninhhinhsu.rss", "An ninh hình sự"},
-            {"24h.com.vn/upload/rss/thoitrang.rss", "Thời trang"},
-            {"24h.com.vn/upload/rss/thoitranghitech.rss", "Thời trang Hitech"},
-            {"24h.com.vn/upload/rss/taichinhbatdongsan.rss", "Tài chính - Bất động sản"},
-            {"24h.com.vn/upload/rss/amthuc.rss", "Ẩm thực"},
-            {"24h.com.vn/upload/rss/lamdep.rss", "Làm đẹp"},
-            {"24h.com.vn/upload/rss/phim.rss", "Phim"},
-            {"24h.com.vn/upload/rss/giaoducduhoc.rss", "Giáo dục - Khoa học"},
-            {"24h.com.vn/upload/rss/bantrecuocsong.rss", "Bạn trẻ - Cuộc sống"},
-            {"24h.com.vn/upload/rss/canhacmtv.rss", "Ca nhạc - MTV"},
-            {"24h.com.vn/upload/rss/thethao.rss", "Thể thao"},
-            {"24h.com.vn/upload/rss/phithuongkyquac.rss", "Phi thường - Kỳ quặc"},
-            {"24h.com.vn/upload/rss/congnghethongtin.rss", "Công nghệ thông tin"},
-            {"24h.com.vn/upload/rss/oto.rss", "Ô tô"}
+            {"https://www.24h.com.vn/upload/rss/trangchu24h.rss", "Trang chủ"},
+            {"https://www.24h.com.vn/upload/rss/tintuctrongngay.rss", "Tin tức trong ngày"},
+            {"https://www.24h.com.vn/upload/rss/bongda.rss", "Bóng đá"},
+            {"https://www.24h.com.vn/upload/rss/asiancup2019.rss", "ASIAN CUP 2019"},
+            {"https://www.24h.com.vn/upload/rss/anninhhinhsu.rss", "An ninh hình sự"},
+            {"https://www.24h.com.vn/upload/rss/thoitrang.rss", "Thời trang"},
+            {"https://www.24h.com.vn/upload/rss/thoitranghitech.rss", "Thời trang Hitech"},
+            {"https://www.24h.com.vn/upload/rss/taichinhbatdongsan.rss", "Tài chính - Bất động sản"},
+            {"https://www.24h.com.vn/upload/rss/amthuc.rss", "Ẩm thực"},
+            {"https://www.24h.com.vn/upload/rss/lamdep.rss", "Làm đẹp"},
+            {"https://www.24h.com.vn/upload/rss/phim.rss", "Phim"},
+            {"https://www.24h.com.vn/upload/rss/giaoducduhoc.rss", "Giáo dục - Khoa học"},
+            {"https://www.24h.com.vn/upload/rss/bantrecuocsong.rss", "Bạn trẻ - Cuộc sống"},
+            {"https://www.24h.com.vn/upload/rss/canhacmtv.rss", "Ca nhạc - MTV"},
+            {"https://www.24h.com.vn/upload/rss/thethao.rss", "Thể thao"},
+            {"https://www.24h.com.vn/upload/rss/phithuongkyquac.rss", "Phi thường - Kỳ quặc"},
+            {"https://www.24h.com.vn/upload/rss/congnghethongtin.rss", "Công nghệ thông tin"},
+            {"https://www.24h.com.vn/upload/rss/oto.rss", "Ô tô"}
     };
-    String[][] myUrlCaptionMenu_VietnamNet = {
+    String[][] VietNamNet = {
             {"https://vietnamnet.vn/rss/thoi-su.rss","Thời sự"},
             {"https://vietnamnet.vn/rss/kinh-doanh.rss","Kinh Doanh"},
             {"https://vietnamnet.vn/rss/giai-tri.rss","Giải trí"},
@@ -147,9 +147,25 @@ public class ShowChannels extends Activity {
             {"https://vietnamnet.vn/rss/giao-duc.rss","Giáo dục"},
             {"https://vietnamnet.vn/rss/suc-khoe.rss","Sức khỏe"},
             {"https://vietnamnet.vn/rss/oto-xe-may.rss","Xe"},
-            {"https://vietnamnet.vn/rss/thoi-su-chinh-tri.rss","Chính trị"}
+            {"https://vietnamnet.vn/rss/thoi-su-chinh-tri.rss","Chính trị"},
+            {"https://vietnamnet.vn/rss/talkshow.rss","Talk"},
+            {"https://vietnamnet.vn/rss/oto-xe-may.rss","Ô tô"},
+            {"https://vietnamnet.vn/rss/the-gioi.rss","Thế giới"},
+            {"https://vietnamnet.vn/rss/tin-moi-nong.rss","Tin mới nóng"},
+            {"https://vietnamnet.vn/rss/ban-doc.rss","Bạn đọc"},
+            {"https://vietnamnet.vn/rss/tin-moi-nhat.rss","Tin mới nhất"}
     };
-    String[][][] myUrlCaptionMenu = new String[][][]{thanhnien, vnexpress, tuoitre, vtcnews, baotintuc};
+    String[][] ITCNew = {
+            {"https://ictnews.vietnamnet.vn/rss/tin-nong-ict.rss","Tin nóng"},
+            {"https://ictnews.vietnamnet.vn/rss/cuoc-song-so.rss","Cuộc sống số"},
+            {"https://ictnews.vietnamnet.vn/rss/vien-thong.rss","Viễn thông"},
+            {"https://ictnews.vietnamnet.vn/rss/san-pham-so.rss","Sản phẩm số"},
+            {"https://ictnews.vietnamnet.vn/rss/game.rss","Game"},
+            {"https://ictnews.vietnamnet.vn/rss/khoi-nghiep.rss","Khởi nghiệp"},
+            {"https://ictnews.vietnamnet.vn/rss/multimedia.rss","Multimedia"},
+            {"https://ictnews.vietnamnet.vn/rss/kham-pha.rss","Khám phá"}
+    };
+    String[][][] myUrlCaptionMenu = new String[][][]{thanhnien, vnexpress, tuoitre, vtcnews, baotintuc, bao24h, VietNamNet, ITCNew};
     String[] myUrlCaption;
     String[] myUrlAddress;
     int index;
@@ -170,7 +186,9 @@ public class ShowChannels extends Activity {
         if (appName.equals("Tuổi trẻ")) index = 2;
         if (appName.equals("VTC News")) index = 3;
         if (appName.equals("Báo tin tức")) index = 4;
-        if (appName.equals("Báo 24h")) index = 4;
+        if (appName.equals("Báo 24h")) index = 5;
+        if (appName.equals("VietNamNet")) index = 6;
+        if (appName.equals("ITCNew")) index = 7;
 
         myUrlCaption = new String[myUrlCaptionMenu[index].length];
         myUrlAddress = new String[myUrlCaptionMenu[index].length];
