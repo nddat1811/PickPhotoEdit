@@ -81,7 +81,75 @@ public class ShowChannels extends Activity {
             {"https://tuoitre.vn/rss/ban-doc-lam-bao.rss", "Bạn đọc làm báo"},
             {"https://tuoitre.vn/rss/du-lich.rss", "Du lịch"}
     };
-    String[][][] myUrlCaptionMenu = new String[][][]{thanhnien, vnexpress, tuoitre};
+    String [][] vtcnews = {
+            {"https://vtc.vn/rss/feed.rss", "Trang chủ"},
+            {"https://vtc.vn/rss/thoi-su.rss", "Thời sự"},
+            {"https://vtc.vn/rss/the-gioi.rss", "Thế giới"},
+            {"https://vtc.vn/rss/phong-su-kham-pha.rss", "Phóng sự - khám phá"},
+            {"https://vtc.vn/rss/bat-dong-san.rss", "Địa ốc - Bất động sản"},
+            {"https://vtc.vn/rss/van-hoa-giai-tri.rss", "Văn hoá - giải trí"},
+            {"https://vtc.vn/rss/doanh-nghiep-doanh-nhan.rss", "Doanh nghiệp - doanh nhân"},
+            {"https://vtc.vn/rss/kinh-te.rss", "Kinh tế"},
+            {"https://vtc.vn/rss/truyen-hinh.rss", "Truyền hình"},
+            {"https://vtc.vn/rss/phap-luat.rss", "Pháp luật"},
+            {"https://vtc.vn/rss/khoa-hoc-cong-nghe.rss", "Khoa học - công nghệ"},
+            {"https://vtc.vn/rss/giao-duc.rss", "Giáo dục"},
+            {"https://vtc.vn/rss/oto-xe-may.rss", "Ô tô - xe máy"},
+            {"https://vtc.vn/rss/suc-khoe.rss", "Sức khỏe"},
+            {"https://vtc.vn/rss/gioi-tre.rss", "Giới trẻ"}
+    };
+    String [][] baotintuc = {
+            {"https://baotintuc.vn/tin-moi-nhat.rss", "Trang chủ"},
+            {"https://baotintuc.vn/thoi-su.rss", "Thời sự"},
+            {"https://baotintuc.vn/xa-hoi.rss", "Xã hội"},
+            {"https://baotintuc.vn/phap-luat.rss", "Pháp luật"},
+            {"https://baotintuc.vn/the-thao.rss", "Thể thao"},
+            {"https://baotintuc.vn/van-hoa.rss", "Văn hoá"},
+            {"https://baotintuc.vn/ho-so.rss", "Hồ sơ"},
+            {"https://baotintuc.vn/kinh-te.rss", "Kinh tế"},
+            {"https://baotintuc.vn/quan-su.rss", "Quân sự"},
+            {"https://baotintuc.vn/bien-dao-viet-nam.rss", "Biển đảo"},
+            {"https://baotintuc.vn/khoa-hoc-cong-nghe.rss", "Khoa học - Công nghệ"},
+            {"https://baotintuc.vn/giao-duc.rss", "Giáo dục"},
+            {"https://baotintuc.vn/suc-khoe.rss", "Y tế"},
+            {"https://baotintuc.vn/dia-phuong.rss", "Địa phương"},
+            {"https://baotintuc.vn/video.rss", "Video"},
+            {"https://baotintuc.vn/goc-nhin.rss", "Góc nhìn"},
+            {"https://baotintuc.vn/anh.rss", "Ảnh"},
+            {"https://baotintuc.vn/ban-doc.rss", "Bạn đọc"}
+    };
+    String [][] bao24h = {
+            {"24h.com.vn/upload/rss/trangchu24h.rss", "Trang chủ"},
+            {"24h.com.vn/upload/rss/tintuctrongngay.rss", "Tin tức trong ngày"},
+            {"24h.com.vn/upload/rss/bongda.rss", "Bóng đá"},
+            {"24h.com.vn/upload/rss/asiancup2019.rss", "ASIAN CUP 2019"},
+            {"24h.com.vn/upload/rss/anninhhinhsu.rss", "An ninh hình sự"},
+            {"24h.com.vn/upload/rss/thoitrang.rss", "Thời trang"},
+            {"24h.com.vn/upload/rss/thoitranghitech.rss", "Thời trang Hitech"},
+            {"24h.com.vn/upload/rss/taichinhbatdongsan.rss", "Tài chính - Bất động sản"},
+            {"24h.com.vn/upload/rss/amthuc.rss", "Ẩm thực"},
+            {"24h.com.vn/upload/rss/lamdep.rss", "Làm đẹp"},
+            {"24h.com.vn/upload/rss/phim.rss", "Phim"},
+            {"24h.com.vn/upload/rss/giaoducduhoc.rss", "Giáo dục - Khoa học"},
+            {"24h.com.vn/upload/rss/bantrecuocsong.rss", "Bạn trẻ - Cuộc sống"},
+            {"24h.com.vn/upload/rss/canhacmtv.rss", "Ca nhạc - MTV"},
+            {"24h.com.vn/upload/rss/thethao.rss", "Thể thao"},
+            {"24h.com.vn/upload/rss/phithuongkyquac.rss", "Phi thường - Kỳ quặc"},
+            {"24h.com.vn/upload/rss/congnghethongtin.rss", "Công nghệ thông tin"},
+            {"24h.com.vn/upload/rss/oto.rss", "Ô tô"}
+    };
+    String[][] myUrlCaptionMenu_VietnamNet = {
+            {"https://vietnamnet.vn/rss/thoi-su.rss","Thời sự"},
+            {"https://vietnamnet.vn/rss/kinh-doanh.rss","Kinh Doanh"},
+            {"https://vietnamnet.vn/rss/giai-tri.rss","Giải trí"},
+            {"https://vietnamnet.vn/rss/the-thao.rss","Thể thao"},
+            {"https://vietnamnet.vn/rss/phap-luat.rss","Pháp luật"},
+            {"https://vietnamnet.vn/rss/giao-duc.rss","Giáo dục"},
+            {"https://vietnamnet.vn/rss/suc-khoe.rss","Sức khỏe"},
+            {"https://vietnamnet.vn/rss/oto-xe-may.rss","Xe"},
+            {"https://vietnamnet.vn/rss/thoi-su-chinh-tri.rss","Chính trị"}
+    };
+    String[][][] myUrlCaptionMenu = new String[][][]{thanhnien, vnexpress, tuoitre, vtcnews, baotintuc};
     String[] myUrlCaption;
     String[] myUrlAddress;
     int index;
@@ -100,6 +168,9 @@ public class ShowChannels extends Activity {
         if (appName.equals("Thanh niên")) index = 0;
         if (appName.equals("VnExpress")) index = 1;
         if (appName.equals("Tuổi trẻ")) index = 2;
+        if (appName.equals("VTC News")) index = 3;
+        if (appName.equals("Báo tin tức")) index = 4;
+        if (appName.equals("Báo 24h")) index = 4;
 
         myUrlCaption = new String[myUrlCaptionMenu[index].length];
         myUrlAddress = new String[myUrlCaptionMenu[index].length];
