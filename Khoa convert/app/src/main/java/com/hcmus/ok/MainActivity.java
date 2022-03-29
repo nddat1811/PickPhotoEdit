@@ -1,11 +1,10 @@
-package com.photoeditorsdk.android.app;
+package com.hcmus.ok;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
@@ -15,13 +14,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import androidx.core.content.FileProvider;
+
+import com.photoeditorsdk.android.app.R;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 import ly.img.android.pesdk.PhotoEditorSettingsList;
 import ly.img.android.pesdk.assets.filter.basic.FilterPackBasic;
@@ -43,7 +41,7 @@ import ly.img.android.pesdk.ui.model.state.UiConfigText;
 import ly.img.android.serializer._3.IMGLYFileWriter;
 
 
-public class KEditorDemoActivityJava extends Activity {
+public class MainActivity extends Activity {
 
 
     public static int PESDK_RESULT = 1;

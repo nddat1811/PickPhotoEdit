@@ -1,4 +1,4 @@
-package com.photoeditorsdk.android.app;
+package com.hcmus.ok;
 
 import android.os.Parcel;
 
